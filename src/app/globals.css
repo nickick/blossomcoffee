@@ -3,6 +3,7 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: #185519;
 }
 
 /*
@@ -23,13 +24,22 @@
   }
 }
 
+a.link {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+a.link:hover {
+  transform: translateX(0.2em);
+}
+
 @utility text-balance {
   text-wrap: balance;
 }
 
 @layer utilities {
   :root {
-    --background: #ffffff;
+    --background: #f5f7f8;
     --foreground: #171717;
   }
 
