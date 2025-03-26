@@ -11,8 +11,8 @@ function Intro() {
         width={600}
         height={600}
       />
-      <div className={cn("flex flex-col gap-4 ", raleway.className)}>
-        <h2 className="text-2xl font-light">
+      <div className={cn("flex flex-col gap-4 sm:gap-4 ", raleway.className)}>
+        <h2 className="text-2xl pt-4 sm:pt-0 font-light">
           Blossom Coffee is a design and product development firm that
           specializes in coffee.
         </h2>

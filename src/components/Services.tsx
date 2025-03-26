@@ -67,7 +67,7 @@ function ServiceCard(props: { service: Service }) {
 function Services() {
   return (
     <div className={cn("flex flex-col gap-12 w-full", raleway.className)}>
-      <div className="flex flex-col gap-2 items-center bg-[#eee] p-8 rounded-lg w-full">
+      <div className="flex flex-col gap-2 items-center bg-[#eee] p-8 rounded-lg w-full pb-12">
         <h2 className="text-[3rem] font-light">Services</h2>
         <p className="text-center">
           Your in-house engineering team, outsourced.

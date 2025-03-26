@@ -45,7 +45,7 @@ function Hero() {
             <p>Introducing the</p>
             <p className="font-bold">Blossom One Brewer</p>
             <Link
-              href="http://www.youtube.com/embed/IfJfmQTrDfE?rel=0&showinfo=0&autoplay=1"
+              href="https://youtu.be/TXHnIKDieWg"
               target="_blank"
               className="flex relative group font-light text-primary"
             >

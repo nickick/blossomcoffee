@@ -25,10 +25,18 @@ function MobileNav({
     >
       <div className="flex flex-col gap-12 relative w-full">
         <div className="flex flex-col gap-4">
-          <Link href="/one-brewer">One Brewer</Link>
-          <Link href="/work">Work</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/one-brewer" onClick={() => toggle(false)}>
+            One Brewer
+          </Link>
+          <Link href="/work" onClick={() => toggle(false)}>
+            Work
+          </Link>
+          <Link href="/about" onClick={() => toggle(false)}>
+            About
+          </Link>
+          <Link href="/contact" onClick={() => toggle(false)}>
+            Contact
+          </Link>
         </div>
         <div className="flex flex-col gap-4">
           <Link href="https://x.com/BlossomCoffee" target="_blank">
