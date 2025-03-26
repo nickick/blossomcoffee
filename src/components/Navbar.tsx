@@ -1,5 +1,6 @@
 "use client";
 
+import { raleway } from "@/app/fonts";
 import { cn } from "@/utils/cn";
 import { SiFacebook, SiX } from "@icons-pack/react-simple-icons";
 import Hamburger from "hamburger-react";
@@ -18,7 +19,8 @@ function MobileNav({
     <div
       className={cn(
         "flex sm:hidden justify-between absolute top-0 left-0 w-[calc(100%-1rem)] h-full bg-white transition-all p-4 py-6 border-l border-l-black z-20",
-        isOpen ? "left-[1rem]" : "left-full"
+        isOpen ? "left-[1rem]" : "left-full",
+        `${raleway.className}`
       )}
     >
       <div className="flex flex-col gap-12 relative w-full">
@@ -47,6 +49,23 @@ function MobileNav({
   );
 }
 
+function LinkWithUnderline({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className="border-b border-transparent hover:border-black transition-all"
+    >
+      {children}
+    </Link>
+  );
+}
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -56,10 +75,10 @@ function Navbar() {
         <Image src="/logo_clear_blk.png" alt="logo" width={150} height={150} />
       </Link>
       <div className="hidden sm:flex gap-4">
-        <Link href="/one-brewer">One Brewer</Link>
-        <Link href="/work">Work</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <LinkWithUnderline href="/one-brewer">One Brewer</LinkWithUnderline>
+        <LinkWithUnderline href="/work">Work</LinkWithUnderline>
+        <LinkWithUnderline href="/about">About</LinkWithUnderline>
+        <LinkWithUnderline href="/contact">Contact</LinkWithUnderline>
       </div>
       <div className="hidden sm:flex gap-4">
         <Link href="https://x.com/BlossomCoffee" target="_blank">
