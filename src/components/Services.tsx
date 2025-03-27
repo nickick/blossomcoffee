@@ -73,7 +73,7 @@ function Services() {
           Your in-house engineering team, outsourced.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-screen-lg w-full mx-auto px-8 sm:px-8 md:px-8 xl:px-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 max-w-screen-lg w-full mx-auto px-8 sm:px-8 md:px-8 xl:px-0">
         {services.map((service) => (
           <ServiceCard key={service.title} service={service} />
         ))}
