@@ -119,6 +119,6 @@ export const products: Record<string, Product> = {
     ],
     image: "/prismo.jpg",
     lastLine:
-      "Learn more here: <a href='http://fellowproducts.com/prismo/' target='_blank'>http://fellowproducts.com/prismo/</a>",
+      "Learn more here: <a href='https://fellowproducts.com/prismo/' target='_blank' class='underline hover:text-gray-500'>https://fellowproducts.com/prismo/</a>",
   },
 };

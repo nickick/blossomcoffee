@@ -21,8 +21,8 @@ function Products() {
         height={300}
         className="w-full h-full object-cover rounded-lg drop-shadow"
       />
-      <h1 className="text-4xl mt-12">Our Products</h1>
-      <div className="flex flex-col gap-12">
+      <h1 className="text-4xl mt-12 md:px-8">Our Products</h1>
+      <div className="flex flex-col gap-12 md:px-8">
         {Object.keys(products).map((product) => {
           function handleViewProduct() {
             window.open(`/products/${product}`, "_blank");
@@ -35,9 +35,9 @@ function Products() {
               <Image
                 src={products[product].image}
                 alt={products[product].name}
-                width={200}
-                height={200}
-                className="w-full h-full max-w-64 md:w-32 md:h-32 object-contain rounded-lg mx-auto"
+                width={300}
+                height={300}
+                className="w-full h-full max-w-64 md:w-48 md:h-48 object-contain rounded-lg mx-auto"
               />
               <div className="flex flex-col gap-4">
                 <Link

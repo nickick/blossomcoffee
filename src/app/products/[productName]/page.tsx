@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { products } from "@/app/products";
 import Image from "next/image";
-
+import { ArrowLeft, ChevronLeft } from "lucide-react";
 function Product() {
   const { productName } = useParams();
 
@@ -30,8 +30,17 @@ function Product() {
 
   return (
     <div className={cn(raleway.className, "p-8 xl:p-0")}>
-      <div className="flex flex-col gap-8 w-full max-w-screen-lg mx-auto mb-4">
-        <h1 className="text-4xl mt-10">{product.name}</h1>
+      <div className="flex flex-col gap-8 w-full max-w-screen-lg mx-auto mb-4 md:px-8">
+        <div className="flex gap-2 items-end justify-between">
+          <h1 className="text-4xl mt-10">{product.name}</h1>
+          <Link
+            href="/products"
+            className="hover:text-gray-500 transition-all flex items-center gap-0"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            Back to products
+          </Link>
+        </div>
         <div className="flex flex-col gap-4">
           {product.image && (
             <Image
@@ -61,8 +70,9 @@ function Product() {
         </div>
         <Link
           href="/products"
-          className="underline hover:text-gray-500 transition-all"
+          className="underline hover:text-gray-500 transition-all flex items-center gap-0"
         >
+          <ChevronLeft className="w-4 h-4" />
           Back to products
         </Link>
       </div>
