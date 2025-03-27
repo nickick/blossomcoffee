@@ -33,17 +33,18 @@ function Product() {
       <div className="flex flex-col gap-8 w-full max-w-screen-lg mx-auto mb-4">
         <h1 className="text-4xl mt-10">{product.name}</h1>
         <div className="flex flex-col gap-4">
-          {product.description.map((description) => (
-            <p key={description}>{description}</p>
-          ))}
           {product.image && (
             <Image
               src={product.image}
               alt={product.name}
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
+              className="w-72 h-72 md:w-full md:h-full md:max-w-96 mx-auto object-cover my-8"
             />
           )}
+          {product.description.map((description) => (
+            <p key={description}>{description}</p>
+          ))}
           <div className="flex flex-col gap-2">
             {product.tags.map((tag) => (
               <p key={tag.key}>
