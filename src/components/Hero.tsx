@@ -1,9 +1,8 @@
-import Image from "next/image";
-import { raleway, bebasNeue } from "@/app/fonts";
+import { bebasNeue, raleway } from "@/app/fonts";
 import { cn } from "@/utils/cn";
-import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { Button } from "./Button";
+import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   return (

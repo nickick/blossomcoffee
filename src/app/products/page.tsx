@@ -28,7 +28,10 @@ function Products() {
             window.open(`/products/${product}`, "_blank");
           }
           return (
-            <div className="flex flex-col items-center md:flex-row gap-8 border-b border-gray-500 pb-12">
+            <div
+              className="flex flex-col items-center md:flex-row gap-8 border-b border-gray-500 pb-12"
+              key={product}
+            >
               <Image
                 src={products[product].image}
                 alt={products[product].name}
