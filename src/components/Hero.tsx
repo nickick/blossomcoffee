@@ -54,7 +54,7 @@ function Hero() {
               <ChevronRight className="absolute -right-7 group-hover:translate-x-1 transition-all duration-300" />
             </Link>
           </div>
-          <Button className="w-1/2 sm:w-auto">Order now</Button>
+          {/* <Button className="w-1/2 sm:w-auto">Order now</Button> */}
         </div>
       </div>
     </div>

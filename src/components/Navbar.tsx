@@ -25,11 +25,8 @@ function MobileNav({
     >
       <div className="flex flex-col gap-12 relative w-full">
         <div className="flex flex-col gap-4">
-          <Link href="/one-brewer" onClick={() => toggle(false)}>
-            One Brewer
-          </Link>
-          <Link href="/work" onClick={() => toggle(false)}>
-            Work
+          <Link href="/products" onClick={() => toggle(false)}>
+            Our Products
           </Link>
           <Link href="/about" onClick={() => toggle(false)}>
             About
@@ -83,8 +80,7 @@ function Navbar() {
         <Image src="/logo_clear_blk.png" alt="logo" width={150} height={150} />
       </Link>
       <div className="hidden sm:flex gap-4">
-        <LinkWithUnderline href="/one-brewer">One Brewer</LinkWithUnderline>
-        <LinkWithUnderline href="/work">Work</LinkWithUnderline>
+        <LinkWithUnderline href="/products">Our Products</LinkWithUnderline>
         <LinkWithUnderline href="/about">About</LinkWithUnderline>
         <LinkWithUnderline href="/contact">Contact</LinkWithUnderline>
       </div>
